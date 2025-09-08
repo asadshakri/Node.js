@@ -1,6 +1,6 @@
 const http=require('http');
 const myServer=http.createServer((req,res)=>{
-
+    res.setHeader('Content-Type','text/html');
     if(req.url=="/"){
         res.statusCode=200;
         res.end("<h1>hello World</h1>");
